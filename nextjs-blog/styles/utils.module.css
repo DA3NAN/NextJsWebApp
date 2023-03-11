@@ -1,0 +1,110 @@
+.heading2Xl {
+  height: 100%;
+  font-size: 3rem;
+  line-height: 2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.heading2Xl h1 {
+  line-height: 1.5;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+  /* border: 4px solid black; */
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+.lightText {
+  color: #666;
+}
+
+.buttonStyle1 {
+  border: 1px solid white;
+  border-radius: 6px;
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.15s ease;
+}
+
+.buttonStyle1:hover,
+.buttonStyle1:focus,
+.buttonStyle1:active {
+  background-color: white;
+  color: #000000;
+}
+
+.buttonStyle2 {
+  border: 1px solid white;
+  border-radius: 6px;
+  background-color: white;
+  color: #000000;
+  transition: background-color 0.15s ease;
+}
+
+.buttonStyle2:hover,
+.buttonStyle2:focus,
+.buttonStyle2:active {
+  background-color: #000;
+  color: white;
+}
+
+.buttonStyle3 {
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.15s ease;
+}
+
+.buttonStyle3:hover,
+.buttonStyle3:focus,
+.buttonStyle3:active {
+  background-color: white;
+  color: #000000;
+}
+
+.space {
+  width: 100%;
+  height: 60px;
+}

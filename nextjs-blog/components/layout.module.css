@@ -1,0 +1,36 @@
+.bigContainer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0rem 8rem;
+  color: white;
+}
+
+.containerMini {
+  max-width: 36rem;
+  padding: 3rem 1rem;
+}
+
+.containerHome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
