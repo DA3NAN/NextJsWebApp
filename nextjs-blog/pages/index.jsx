@@ -11,12 +11,10 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className={utilStyles.space}></div>
       <section className={utilStyles.heading2Xl}>
         <div className={indexStyle.bigTitle}>
           <h1>
-            Welcome to The <font className={indexStyle.difColor2}>New</font>{" "}
-            World <br />
+            Welcome to The New World <br />
             Take the <font className={indexStyle.difColor1}>Adventure</font>
           </h1>
         </div>
@@ -24,6 +22,7 @@ export default function Home() {
           <button className={utilStyles.buttonStyle3}>See my first post</button>
         </Link>
       </section>
+      <div className={utilStyles.space}></div>
       <div className={utilStyles.space}></div>
       <div className={utilStyles.headingMd}>
         <h2>Get to know us</h2>
@@ -43,11 +42,14 @@ export default function Home() {
             AI can add value and develop a roadmap for implementation.
           </p>
         </div>
+        <div className={utilStyles.miniSpace}></div>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
+      <div className={utilStyles.space}></div>
+      <div className={utilStyles.space}></div>
     </Layout>
   );
 }

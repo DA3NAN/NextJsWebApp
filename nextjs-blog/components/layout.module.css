@@ -1,13 +1,14 @@
 .bigContainer {
   width: 100%;
   height: 100%;
+  padding: 0rem 8rem;
   background-color: black;
+  color: white;
 }
 
 .container {
   width: 100%;
   height: 100%;
-  padding: 0rem 8rem;
   color: white;
 }
 

@@ -6,7 +6,7 @@
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.07);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(94, 94, 94, 0.11);
   backdrop-filter: blur(3.3px);
   -webkit-backdrop-filter: blur(3.3px);
   border: 1px solid rgba(255, 255, 255, 0.09);
@@ -15,89 +15,52 @@
 .card:hover,
 .card:focus,
 .card:active {
+  box-shadow: 0 4px 30px rgba(94, 94, 94, 0.247);
   transform: translateY(-5px);
   /* scale: 1.015; */
 }
 
 .difColor1 {
-  /* Create the gradient. */
-  background-image: linear-gradient(
-    68.4deg,
-    rgba(99, 251, 215, 1) -0.4%,
-    rgba(5, 222, 250, 1) 100.2%
+  background: rgb(0, 31, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 31, 255, 1) 0%,
+    rgba(0, 203, 191, 1) 50%,
+    rgba(0, 255, 171, 1) 100%
   );
-
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
+  background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  animation: color-change1 4s infinite;
-}
-
-@keyframes color-change1 {
-  from {
-    background-image: linear-gradient(
-      68.4deg,
-      rgba(99, 251, 215, 1) -0.4%,
-      rgba(5, 222, 250, 1) 100.2%
-    );
-  }
-  to {
-    background-image: radial-gradient(
-      circle farthest-corner at 10.2% 55.8%,
-      rgba(252, 37, 103, 1) 0%,
-      rgba(250, 38, 151, 1) 46.2%,
-      rgba(186, 8, 181, 1) 90.1%
-    );
-  }
-}
-
-@keyframes color-change2 {
-  from {
-    background-image: radial-gradient(
-      circle farthest-corner at 10.2% 55.8%,
-      rgba(252, 37, 103, 1) 0%,
-      rgba(250, 38, 151, 1) 46.2%,
-      rgba(186, 8, 181, 1) 90.1%
-    );
-  }
-  to {
-    background-image: linear-gradient(
-      68.4deg,
-      rgba(99, 251, 215, 1) -0.4%,
-      rgba(5, 222, 250, 1) 100.2%
-    );
-  }
+  animation: gradient 5s infinite alternate;
 }
 
 .difColor2 {
-  /* Create the gradient. */
-  background-image: radial-gradient(
-    circle farthest-corner at 10.2% 55.8%,
-    rgba(252, 37, 103, 1) 0%,
-    rgba(250, 38, 151, 1) 46.2%,
-    rgba(186, 8, 181, 1) 90.1%
+  background: rgb(0, 125, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 125, 255, 1) 0%,
+    rgba(0, 185, 203, 1) 48%,
+    rgba(0, 255, 197, 1) 100%
   );
-
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
+  background-size: 400%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  animation: color-change2 4s infinite;
+  animation: gradient 5s infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
 .bigTitle {

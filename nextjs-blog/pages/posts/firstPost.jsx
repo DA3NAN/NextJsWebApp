@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/layout";
-// import Script from "next/script";s
+import utilStyles from "../../styles/utils.module.css";
 
 export default function FirstPost() {
   return (
@@ -10,7 +10,7 @@ export default function FirstPost() {
       <Head>
         <title>First Post</title>
       </Head>
-      <h1>First Post</h1>
+      <section className={utilStyles.heading2Xl}>First Post</section>
     </Layout>
   );
 }

@@ -42,3 +42,14 @@ button {
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #b5179e;
+}
+
+::selection {
+  color: white;
+  background: #b5179e;
+}

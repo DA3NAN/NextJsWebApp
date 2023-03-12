@@ -20,6 +20,7 @@ export default function Layout({ children, home }) {
         <Navbar />
       </header>
       <div className={utilStyles.space}></div>
+      <div className={utilStyles.space}></div>
       <main className={layoutStyle.container}>{children}</main>
       {!home && (
         <div className={layoutStyle.backToHome}>
