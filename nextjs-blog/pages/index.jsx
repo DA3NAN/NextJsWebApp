@@ -3,6 +3,7 @@ import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import homeStyles from "../styles/home.module.css";
+import Collapse from "../components/collapse";
 
 export default function Home() {
   return (
@@ -18,7 +19,9 @@ export default function Home() {
           </h1>
         </div>
         <Link href="./posts/firstPost">
-          <button className={utilStyles.buttonStyle3}>See my first post</button>
+          <button className={utilStyles.buttonStyle3}>
+            <box-icon name="chevron-right"></box-icon> Discover more
+          </button>
         </Link>
       </section>
       <div className={utilStyles.space}></div>
@@ -41,6 +44,8 @@ export default function Home() {
             AI can add value and develop a roadmap for implementation.
           </p>
         </div>
+        <div className={utilStyles.miniSpace}></div>
+        <Collapse />
         <div className={utilStyles.miniSpace}></div>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}

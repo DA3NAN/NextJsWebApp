@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.438);
   background-blend-mode: multiply;
+  transition: 0.15s ease;
+}
+
+.collapseGroup {
+  color: white;
 }
 
 .title a {
