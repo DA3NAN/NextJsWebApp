@@ -36,7 +36,8 @@ ul {
 }
 
 button {
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
+  border: none;
   /* font-weight: 500; */
   cursor: pointer;
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -52,4 +53,24 @@ button {
 ::selection {
   color: white;
   background: #b5179e;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

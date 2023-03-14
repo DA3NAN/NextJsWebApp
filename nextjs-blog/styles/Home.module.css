@@ -1,10 +1,12 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 0rem 8rem;
+  background-image: url("../public/images/back1.jpg");
+  background-position-x: 240px;
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.438);
+  background-blend-mode: multiply;
 }
 
 .title a {
@@ -24,18 +26,9 @@
   font-size: 3.6rem;
 }
 
-.title {
-  text-align: center;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .grid {
@@ -49,9 +42,9 @@
 }
 
 .card {
-  margin: 1rem;
   flex-basis: 45%;
-  padding: 1.5rem;
+  padding: 1.3rem 1rem;
+  margin: 1rem 0;
   text-align: left;
   color: inherit;
   text-decoration: none;
@@ -60,12 +53,12 @@
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.card:hover,
+/* .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
+  color: #5bc0be;
+  border-color: #5bc0be;
+} */
 
 .card h3 {
   margin: 0 0 1rem 0;
@@ -74,12 +67,70 @@
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .logo {
   height: 1em;
+}
+
+/* .card {
+  padding: 1.3rem 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(94, 94, 94, 0.11);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+} */
+
+/* .card:hover,
+.card:focus,
+.card:active {
+  box-shadow: 0 4px 30px rgba(94, 94, 94, 0.247);
+  transform: translateY(-5px);
+} */
+
+/* .difColor1 {
+  background: rgb(0, 31, 255);
+  background-image: linear-gradient(
+    60deg,
+    #e9ecef 0%,
+    #ced4da 25%,
+    #00b4d8 50%,
+    #ced4da 75%,
+    #e9ecef 100%
+  );
+  background-size: 150%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation: gradient 3s forwards infinite alternate linear;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+} */
+
+.bigTitle {
+  color: white;
+  max-width: 800px;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 17px;
+  line-height: 2;
+  color: inherit;
 }
 
 @media (max-width: 600px) {

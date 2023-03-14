@@ -2,8 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import homeStyles from "../styles/Home.module.css";
-import indexStyle from "./index.module.css";
+import homeStyles from "../styles/home.module.css";
 
 export default function Home() {
   return (
@@ -12,10 +11,10 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.heading2Xl}>
-        <div className={indexStyle.bigTitle}>
+        <div className={homeStyles.bigTitle}>
           <h1>
             Welcome to The New World <br />
-            Take the <font className={indexStyle.difColor1}>Adventure</font>
+            Take the Adventure
           </h1>
         </div>
         <Link href="./posts/firstPost">
@@ -28,8 +27,8 @@ export default function Home() {
         <h2>Get to know us</h2>
       </div>
       <section className={utilStyles.headingMd}>
-        <div className={indexStyle.card}>
-          <p className={indexStyle.description}>
+        <div className={homeStyles.card}>
+          <p className={homeStyles.description}>
             Techist AI is a cutting-edge startup founded by a team of experts in
             the field of AI and computer science, with a mission to provide
             innovative AI solutions to businesses across various industries. The

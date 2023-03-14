@@ -5,13 +5,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #21252900;
   position: fixed;
-  transition: 0.2s ease;
+  transition: 0.25s ease-in-out;
 }
 
 .activeNavbar {
   border-bottom: 1px solid #212529;
-  background-color: rgba(0, 0, 0, 0.856);
+  background-color: rgba(0, 0, 0, 0.356);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .logo {
@@ -25,7 +28,7 @@
 }
 
 .links {
-  color: #6c757d;
+  color: #99a0a7;
   font-weight: 500;
   font-size: 15px;
 }
@@ -43,5 +46,5 @@
 .item:hover,
 .item:focus,
 .item:active {
-  color: #ced4da;
+  color: #dee2e6;
 }

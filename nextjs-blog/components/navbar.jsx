@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import navbarStyle from "./navbar.module.css";
+import navbarStyle from "../styles/navbar.module.css";
 import utilStyles from "../styles/utils.module.css";
 import logo from "/public/blob.svg";
 import { useState, useEffect } from "react";
 
+const logoName = "Techist AI";
+
 export default function navbar() {
-  const logoName = "Techist AI";
   const [clientWindowHeight, setClientWindowHeight] = useState("");
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
@@ -48,7 +49,7 @@ export default function navbar() {
       </div>
       <div className={navbarStyle.sign}>
         <Link href="/" className={navbarStyle.item}>
-          <button className={utilStyles.buttonStyle1}>Sign in</button>
+          <button className={utilStyles.buttonStyle1}>Login</button>
         </Link>
         <Link href="/" className={navbarStyle.item}>
           <button className={utilStyles.buttonStyle2}>Sign up</button>

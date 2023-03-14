@@ -1,8 +1,8 @@
 .heading2Xl {
   height: 100%;
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 2;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
 }
@@ -58,11 +58,10 @@
 }
 
 .buttonStyle1 {
-  border: 1px solid white;
   border-radius: 6px;
   background-color: transparent;
   color: white;
-  transition: background-color 0.15s ease;
+  transition: 0.2s ease;
 }
 
 .buttonStyle1:hover,
@@ -83,25 +82,25 @@
 .buttonStyle2:hover,
 .buttonStyle2:focus,
 .buttonStyle2:active {
-  background-color: #000;
+  background-color: transparent;
   color: white;
 }
 
 .buttonStyle3 {
   border: 1px solid white;
+  background-color: white;
   border-radius: 6px;
   font-size: 16px;
   padding: 0.5rem 2rem;
-  background-color: transparent;
-  color: white;
+  color: #000000;
   transition: background-color 0.15s ease;
 }
 
 .buttonStyle3:hover,
 .buttonStyle3:focus,
 .buttonStyle3:active {
-  background-color: white;
-  color: #000000;
+  background-color: transparent;
+  color: white;
 }
 
 .space {
