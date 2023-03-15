@@ -3,15 +3,44 @@ import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import homeStyles from "../styles/home.module.css";
-import Collapse from "../components/collapse";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const size = useWindowSize();
+  function useWindowSize() {
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    });
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+      window.addEventListener("resize", handleResize);
+      handleResize();
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+    return windowSize;
+  }
+
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.heading2Xl}>
+      <section
+        className={
+          size.width >= 1100
+            ? utilStyles.heading2Xl
+            : size.width >= 900
+            ? utilStyles.headingXl
+            : utilStyles.headingMd
+        }
+      >
         <div className={homeStyles.bigTitle}>
           <h1>
             Welcome to The New World <br />
@@ -45,7 +74,6 @@ export default function Home() {
           </p>
         </div>
         <div className={utilStyles.miniSpace}></div>
-        <Collapse />
         <div className={utilStyles.miniSpace}></div>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}

@@ -1,6 +1,7 @@
 import React from "react";
 import layoutStyle from "../styles/layout.module.css";
 import { useState, useEffect } from "react";
+import ArrowUp from "../components/arrowUp";
 
 export default function scrollToTop() {
   const isBrowser = () => typeof window !== "undefined";
@@ -27,7 +28,7 @@ export default function scrollToTop() {
   return (
     <div id="gotop" className={layoutStyle.goTop} onClick={scrollToTop}>
       <i class="bx bxl-facebook-square">
-        <box-icon name="up-arrow"></box-icon>
+        <ArrowUp />
       </i>
     </div>
   );
