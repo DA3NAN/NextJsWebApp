@@ -5,6 +5,7 @@ import layoutStyles from "@/styles/Layout.module.css";
 import Layout from "@/components/Layout";
 import hero from "/public/hero.svg";
 import analytics from "/public/analytics.svg";
+import app from "/public/app.svg";
 import logo1 from "/public/logo1.png";
 import logo2 from "/public/logo2.png";
 import logo3 from "/public/logo3.png";
@@ -48,6 +49,7 @@ export default function Home() {
             <Image src={logo4} alt="logo4" />
           </div>
         </div>
+
         <div className={layoutStyles.spacer}></div>
         <div className={layoutStyles.spacer}></div>
         <div className={styles.row}>
@@ -65,6 +67,24 @@ export default function Home() {
             </p>
             <div className={layoutStyles.spacer}></div>
             <button className={styles.btn3}>View OUr Pricing</button>
+          </div>
+        </div>
+
+        <div className={layoutStyles.spacer}></div>
+        <div className={layoutStyles.spacer}></div>
+        <div className={styles.row}>
+          <div className={styles.col}>
+            <div className={layoutStyles.subHeading}>get our app</div>
+            <div className={styles.title}>browse nfts from your smartphone</div>
+            <p>
+              Our Krypto app is the easiest way to keep track of your assets
+              when you're on the go.
+            </p>
+            <div className={layoutStyles.spacer}></div>
+            <button className={styles.btn3}>Download on ios</button>
+          </div>
+          <div className={styles.col}>
+            <Image src={app} width={500} alt="hero" />
           </div>
         </div>
       </main>
