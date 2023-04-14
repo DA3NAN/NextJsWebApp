@@ -22,20 +22,27 @@
   filter: blur(150px);
 }
 
-.hero {
+.row {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.content {
-  max-width: 450px;
+.col {
+  max-width: 500px;
 }
 
 .bigTitle {
   font-size: 80px;
   font-weight: 600;
+  max-width: 450px;
+}
+
+.title {
+  font-size: 57px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .heroDescription {
@@ -50,25 +57,14 @@
   font-family: "Outfit", sans-serif;
 }
 
-.heroButtons button {
-  font-family: "Outfit", sans-serif;
-  text-transform: uppercase;
-  font-size: 18px;
-  padding: 0.7rem 0;
-  border-radius: 50px;
-  outline: none;
-  width: 200px;
-  cursor: pointer;
-  transition: 0.15s ease;
-}
-
 .btn1 {
   background-color: #8e8edb;
   color: white;
   border: none;
 }
 
-.btn1:hover {
+.btn1:hover,
+.btn3:hover {
   background-color: #7272bb;
 }
 
@@ -80,6 +76,13 @@
 
 .btn2:hover {
   color: #d9d9d9;
+}
+
+.btn3 {
+  background-color: #8e8edb;
+  color: white;
+  border: none;
+  width: 270px;
 }
 
 .logos {
